@@ -20,29 +20,29 @@ use TencentCloud\Common\AbstractModel;
 /**
  * TextToVoice返回参数结构体
  *
- * @method string getAudio() 获取base64编码的wav/mp3音频数据
- * @method void setAudio(string $Audio) 设置base64编码的wav/mp3音频数据
- * @method string getSessionId() 获取一次请求对应一个SessionId
- * @method void setSessionId(string $SessionId) 设置一次请求对应一个SessionId
- * @method array getSubtitles() 获取时间戳信息，若未开启时间戳，则返回空数组。
- * @method void setSubtitles(array $Subtitles) 设置时间戳信息，若未开启时间戳，则返回空数组。
+ * @method string getAudio() 获取<p>base64编码的wav/mp3音频数据</p>
+ * @method void setAudio(string $Audio) 设置<p>base64编码的wav/mp3音频数据</p>
+ * @method string getSessionId() 获取<p>一次请求对应一个SessionId</p>
+ * @method void setSessionId(string $SessionId) 设置<p>一次请求对应一个SessionId</p>
+ * @method array getSubtitles() 获取<p>时间戳信息，若未开启时间戳，则返回空数组。</p>
+ * @method void setSubtitles(array $Subtitles) 设置<p>时间戳信息，若未开启时间戳，则返回空数组。</p>
  * @method string getRequestId() 获取唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  * @method void setRequestId(string $RequestId) 设置唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  */
 class TextToVoiceResponse extends AbstractModel
 {
     /**
-     * @var string base64编码的wav/mp3音频数据
+     * @var string <p>base64编码的wav/mp3音频数据</p>
      */
     public $Audio;
 
     /**
-     * @var string 一次请求对应一个SessionId
+     * @var string <p>一次请求对应一个SessionId</p>
      */
     public $SessionId;
 
     /**
-     * @var array 时间戳信息，若未开启时间戳，则返回空数组。
+     * @var array <p>时间戳信息，若未开启时间戳，则返回空数组。</p>
      */
     public $Subtitles;
 
@@ -52,9 +52,9 @@ class TextToVoiceResponse extends AbstractModel
     public $RequestId;
 
     /**
-     * @param string $Audio base64编码的wav/mp3音频数据
-     * @param string $SessionId 一次请求对应一个SessionId
-     * @param array $Subtitles 时间戳信息，若未开启时间戳，则返回空数组。
+     * @param string $Audio <p>base64编码的wav/mp3音频数据</p>
+     * @param string $SessionId <p>一次请求对应一个SessionId</p>
+     * @param array $Subtitles <p>时间戳信息，若未开启时间戳，则返回空数组。</p>
      * @param string $RequestId 唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
      */
     function __construct()
